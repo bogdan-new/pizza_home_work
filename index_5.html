@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style_2.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<title>Document</title>
+</head>
+<body>
+	<h1 class="Order">Замовлення</h1>
+	<div class="wrapper">
+		
+		<div  class="block_1" id="#section2">
+			<img  class="pizza_img"	src="img/pizza_4.jpg">
+		</div>
+		
+		<form action="/submit_form.php" method="post">
+
+        <label for="file">Піца діаметром:</label><br>
+		<input type="radio" id="radius" name="radius" required>30 cм
+		<input type="radio" id="radius" name="radius" required>40 cм<br><br>
+
+		<label for="file">Піца з сирними бортами:</label><br>
+		<input type="radio" id="pizza_sides" name="pizza_sides" required>Так
+		<input type="radio" id="pizza_sides" name="pizza_sides" required>Ні<br><br>
+
+		<label for="file">Піца з м'ясними бортами:</label><br>
+		<input type="radio" id="pizza_sides" name="pizza_sides" required>Так
+		<input type="radio" id="pizza_sides" name="pizza_sides" required>Ні<br><br>
+
+		<label for="city">Місто:</label>
+        <select id="city" name="city"required>
+            <option value="kyiv">Івано-Франківськ</option>
+            <option value="lviv">Львів</option>
+            <option value="odessa">Хмельницький</option>
+            <option value="kharkiv">Вінниця</option>
+            <option value="dnipro">Київ</option>
+        </select><br><br>
+			
+			<label for="address">Адреса:</label><br>
+			<input type="text"><br><br>
+			
+			<label for="email">Email:</label><br>
+			<input type="email" id="email" name="email" required><br><br>
+ 
+			<label for="address">Ім'я:</label><br>
+			<input type="text"><br><br>
+  
+			<label for="address">Ваш номер телефону</label><br>
+			<input type="tel" id="phone" name="phone" placeholder="+380XXXXXXXXX" required><br><br>
+
+			<label>Вид оплати:</label><br>
+			<input type="radio" id="cash" name="payment" value="cash" required>
+			<label for="cash">Готівка</label><br>
+			<input type="radio" id="card" name="payment" value="card" required>
+			<label for="card">Картка</label><br><br>
+
+			<label for="koment">Коментар до замовлення:</label><br>
+			<input type="text"><br>
+		
+
+			<input class="submit" type="submit" value="замовити">
+		</form>
+	</div>
+</body>
+</html>

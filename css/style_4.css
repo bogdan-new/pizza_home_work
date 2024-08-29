@@ -1,0 +1,50 @@
+*{
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+}
+.wrapper{
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	display: flex;
+	border: 2px solid rgb(198, 195, 195);
+    border-radius: 35px;
+}
+.block_1{
+	width: 50%;
+	height: 430px;
+}
+.pizza_img{
+	height: 100%;
+}
+.button{
+	width: 100px;
+	height: 70px;
+	border: 2px solid black;
+}
+label{
+	font-family: "Roboto", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+.Order{
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+.submit{
+	margin-top: 10px;
+   border: 2px solid white;
+   border-radius: 10px ;
+	background: #5CB85C;
+	width: 100px;
+	height: 30px;
+}
+.submit:hover{
+	background: #428642;
+	transform: scale(1.1);
+	transition: transform 0.5s ease;
+	border: 2px ;
+}
